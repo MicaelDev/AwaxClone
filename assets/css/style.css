@@ -91,17 +91,17 @@ header {
 /* Main */
 .button{
     display: block;
-    margin-top: 20px;
+    margin-top: 30px;
     border-radius: 20px;
     background-color: #B28756;
-    font-size: 12px;
+    font-size: 14px;
     padding: 10px 30px;
     text-decoration: none;
     color: #FFF;
-    font-weight: bold;
+    font-weight: 600;
     text-transform: uppercase;
-    max-width: 160px;
-    max-height: 35px;
+    max-width: 250px;
+    max-height: 80px;
     text-align: center;
 }
 
@@ -271,4 +271,102 @@ header {
     margin-top: 10px;
     font-size: 13px;
     color: #999;
+}
+
+
+
+
+/* Projects */
+
+.section-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.section-projects-filters{
+    border: 1px solid #999;
+    background-color: #EEE;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 0px 20px;
+
+}
+.section-projects-filters ul,
+.section-projects-filters li{
+    list-style: none;
+}
+.section-projects-filters li{
+    display: inline-block;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-right: 1px solid #999;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+.section-projects-filters li a{
+    text-decoration: none;
+    color: #333;
+}
+.section-projects-filters li:hover,
+.section-projects-filters li.active{
+    border-bottom: 4px solid #B28756;
+}
+.section-projects-filters li:last-child{
+    border-right: none;
+}
+
+.section-projects--photos{
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section-projects--photo{
+    width: 320px;
+}
+.section-projects--photoarea{
+    margin: 10px;
+    width: 300px;
+    height: 190px;
+}
+.section-projects--photoarea:hover .section-projects--photoinfo{
+    display: flex;
+}
+.section-projects--photoarea img{
+    width: inherit;
+    height: inherit;
+}
+.section-projects--photoinfo{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: inherit;
+    height: inherit;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    padding: 30px;
+}
+.section-projects--photoinfo h5{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+/* Team */
+.bg-team{
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+}
+.section-team-area{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
